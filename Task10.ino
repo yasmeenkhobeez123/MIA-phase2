@@ -1,7 +1,6 @@
 #include <Wire.h>
 
 const int MPU = 0x68;               // MPU6050 I2C address
-const float GYRO_SCALE = 131.0;     // Scale factor for gyroscope
 float GyroZ;
 float yaw;
 float elapsedTime, currentTime, previousTime;
@@ -34,7 +33,7 @@ void loop() {
 
   // Read raw gyroscope data and combine high and low bytes
   int16_t zGyroRaw = Wire.read() << 8 | Wire.read();
-  GyroZ = (zGyroRaw / GYRO_SCALE) - zGyroOffset;
+  GyroZ = (zGyroRaw / 131.0) - zGyroOffset;
 
   // Integrate to calculate yaw angle
   yaw += GyroZ * elapsedTime;
@@ -64,7 +63,7 @@ void calibrateGyro() {
   }
 
   // Calculate the average offset for the Z-axis gyroscope
-  zGyroOffset = (zGyroSum / (samples * GYRO_SCALE));
+  zGyroOffset = (zGyroSum / (samples * 131.0));
 
   Serial.print("Z Gyroscope Offset: ");
   Serial.println(zGyroOffset);
