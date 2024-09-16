@@ -31,12 +31,5 @@ In this project, we explore building a neural network from scratch and compare i
 - **Ease of Experimentation**: Easily try different models, add layers, or adjust settings with minimal code changes.
 - **Tools and Support**: Offer robust tools for model visualization, debugging, and deployment, which simplifies development.
 
-## Summary
-
-- **Ease of Use**: PyTorch and TensorFlow are much easier to use compared to building a neural network from scratch. They handle many complex tasks for you.
-- **Performance**: Libraries like PyTorch and TensorFlow provide faster and more efficient training, especially useful for large-scale projects.
-- **Flexibility**: While building from scratch gives you full control, PyTorch and TensorFlow offer a rich set of features and tools that make experimentation and development easier.
-
-For most practical purposes, using PyTorch or TensorFlow is recommended due to their ease of use, performance benefits, and comprehensive support.
 
 
