@@ -1,35 +1,49 @@
-# MIA-phase2
-# Neural Network Implementation Comparison
+# Neural Network Implementation and MNIST Classification
 
-In this project, we explore building a neural network from scratch and compare it to using popular deep learning libraries, PyTorch and TensorFlow. This comparison highlights key differences and advantages of each approach.
+## Neural Network from Scratch
 
-## 1. Neural Network from Scratch
+In this project, we implemented a fully connected neural network from scratch to classify handwritten digits from the MNIST dataset. 
 
-### Ease of Use
-- **Complexity**: Building a neural network from scratch involves writing all the code for training, updating, and managing the model yourself. This can be quite complex and time-consuming.
-- **Learning Curve**: Requires a good understanding of neural network mechanics. You’ll need to handle details like weight adjustments and backpropagation manually.
+### Key Details:
+- **Architecture:** A fully connected neural network with ReLU activation in the hidden layer and softmax output for classification.
+- **Loss Function:** Cross-entropy loss.
+- **Optimizer:** Gradient descent with a learning rate of 0.1.
+- **Epochs:** 100
 
-### Performance
-- **Slower**: Custom implementations might not be as efficient, particularly with large datasets or complex models.
-- **Limited Features**: You may not have access to advanced optimizations that can enhance performance.
+### Results:
+- **Test Accuracy:** 90.64%
 
-### Flexibility
-- **Full Control**: Allows complete customization of your model’s architecture and training process.
-- **Educational Value**: Provides a deep understanding of how neural networks operate internally.
+## MNIST Classification with PyTorch
 
-## 2. Using PyTorch or TensorFlow
+We re-implemented the neural network using PyTorch for comparison. PyTorch provides a more streamlined approach for building and training models.
 
-### Ease of Use
-- **User-Friendly**: These libraries provide high-level tools and functions to build and train neural networks easily. Most of the heavy lifting is handled by the library.
-- **Quick Setup**: You can set up and train your model with fewer lines of code, making the process faster and more straightforward.
+### Key Details:
+- **Architecture:** Same as the scratch implementation.
+- **Loss Function:** Cross-entropy loss.
+- **Optimizer:** Stochastic Gradient Descent (SGD) with a learning rate of 0.1.
+- **Epochs:** 100
 
-### Performance
-- **Faster**: PyTorch and TensorFlow are optimized for performance, often using GPUs to speed up the training process.
-- **Efficient**: These libraries include many built-in optimizations that improve training speed and efficiency.
+### Results:
+- **Test Accuracy:** 96.69% 
 
-### Flexibility
-- **Ease of Experimentation**: Easily try different models, add layers, or adjust settings with minimal code changes.
-- **Tools and Support**: Offer robust tools for model visualization, debugging, and deployment, which simplifies development.
+## Comparison
+
+### Ease of Use:
+- **Scratch:** Requires manual implementation of forward and backward passes, gradient computation, and weight updates.
+- **PyTorch:** Simplifies model creation and training with built-in functions and automatic differentiation.
+
+### Performance:
+- **Scratch:** Performance depends on manual optimization and might not utilize hardware acceleration efficiently.
+- **PyTorch:** Provides better performance due to hardware acceleration and optimized computations.
+
+### Flexibility:
+- **Scratch:** Limited flexibility for experimenting with complex architectures.
+- **PyTorch:** Offers greater flexibility for building complex models and experimenting with different architectures.
+
+## Conclusion
+
+Implementing a neural network from scratch provided valuable insights into the inner workings of neural networks, while using PyTorch demonstrated the advantages of modern deep learning frameworks in terms of ease of use, performance, and flexibility.
+
 
 
 
