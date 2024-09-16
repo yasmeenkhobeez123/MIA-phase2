@@ -1,30 +1,21 @@
 # MIA-phase2
-#1. Ease of Use
-From Scratch:
-
-Complexity: Building a neural network from scratch means you have to write all the code for training and updating the model yourself. This can be complicated and time-consuming.
-Learning Curve: It requires a deep understanding of how neural networks work. You’ll spend a lot of time figuring out details like how to adjust weights and biases.
-PyTorch/TensorFlow:
-
-User-Friendly: These libraries come with ready-made tools and functions to build and train neural networks. You just need to set up your model and let the library handle the rest.
-Quick Setup: They simplify many tasks, so you can get your model running faster and with less code.
-
-#2. Performance
-From Scratch:
-
-Slower: Manual implementations might not be as fast or efficient, especially with larger models or datasets.
-Limited Features: You may miss out on advanced techniques that can speed up training and improve performance.
-PyTorch/TensorFlow:
-
-Faster: These libraries are optimized for performance and can use GPUs to speed up training, making them much faster for big tasks.
-Efficient: They include many built-in optimizations to make training smoother and quicker.
-
-#3. Flexibility
-From Scratch:
-
-Full Control: You have complete freedom to customize your model exactly as you want. This is great for learning or if you need something very specific.
-Educational: Building from scratch helps you understand the inner workings of neural networks.
-PyTorch/TensorFlow:
-
-Ease of Experimentation: You can easily try different model types, add layers, or change settings with just a few lines of code.
-Tools and Support: They come with many helpful tools for visualizing and debugging your model, which makes it easier to work with.
+1. Neural Network from Scratch
+Ease of Use
+Complexity: Building a neural network from scratch involves writing all the code for training, updating, and managing the model yourself. This can be quite complex and time-consuming.
+Learning Curve: Requires a good understanding of neural network mechanics. You’ll need to handle details like weight adjustments and backpropagation manually.
+Performance
+Slower: Custom implementations might not be as efficient, particularly with large datasets or complex models.
+Limited Features: You may not have access to advanced optimizations that can enhance performance.
+Flexibility
+Full Control: Allows complete customization of your model’s architecture and training process.
+Educational Value: Provides a deep understanding of how neural networks operate internally.
+2. Using PyTorch or TensorFlow
+Ease of Use
+User-Friendly: These libraries provide high-level tools and functions to build and train neural networks easily. Most of the heavy lifting is handled by the library.
+Quick Setup: You can set up and train your model with fewer lines of code, making the process faster and more straightforward.
+Performance
+Faster: PyTorch and TensorFlow are optimized for performance, often using GPUs to speed up the training process.
+Efficient: These libraries include many built-in optimizations that improve training speed and efficiency.
+Flexibility
+Ease of Experimentation: Easily try different models, add layers, or adjust settings with minimal code changes.
+Tools and Support: Offer robust tools for model visualization, debugging, and deployment, which simplifies development.
