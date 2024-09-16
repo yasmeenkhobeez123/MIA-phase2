@@ -2,7 +2,7 @@
 
 ## Neural Network from Scratch
 
-In this project, we implemented a fully connected neural network from scratch to classify handwritten digits from the MNIST dataset. 
+ 
 
 ### Key Details:
 - **Architecture:** A fully connected neural network with ReLU activation in the hidden layer and softmax output for classification.
